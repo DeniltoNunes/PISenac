@@ -20,7 +20,7 @@ function setup() {
   mario = createImg("mario.png");
   mario.size(80, 80);
 
-  alturaBase = height - 180;
+  alturaBase = height - 210;
   marioY = alturaBase;
 }
 
