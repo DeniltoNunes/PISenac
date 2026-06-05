@@ -33,7 +33,7 @@ h1 {
   pointer-events: none;
 }
 
-.box {
+.box, .boxD20, .boxArte {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,23 +49,14 @@ h1 {
   pointer-events: auto;
 }
 
-.boxD20 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.boxD20, .boxArte {
   width: 200px;
   height: 100px;
-  background: #0d4c94;
-  color: white;
   font-size: 20px;
-  text-decoration: none;
-  border-radius: 12px;
-  transition: background 0.3s ease;
-  pointer-events: auto;
   cursor: pointer;
 }
 
-.boxD20:hover {
+.boxD20:hover, .box:hover, .boxArte:hover {
   background: #3399FF;
 }
 
@@ -93,20 +84,4 @@ h1 {
     margin-top: 10px;
     font-size: 20px;
   }
-}
-
-.boxArte {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 100px;
-  background: #0d4c94;
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  border-radius: 12px;
-  transition: background 0.3s ease;
-  pointer-events: auto;
-  cursor: pointer;
 }

@@ -19,7 +19,7 @@ function draw() {
 
   // anéis
   for (let x = 50; x < width; x += 80) {
-    let y = 550 - sin(x * 0.3) * 40;
+    let y = height/2 - 4*sin(x * 0.009) * 50 + 20;
 
     noFill();
     stroke(255, 215, 0);
@@ -29,7 +29,7 @@ function draw() {
 
   sonicX += 3;
 
-  let sonicY = 550 - sin(sonicX * 0.02) * 40 + 20;
+  let sonicY = height/2 - 4*sin(sonicX * 0.009) * 50 + 20;
 
   sonicGif.position(
     sonicX - 30,

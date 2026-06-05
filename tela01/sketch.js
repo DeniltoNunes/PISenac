@@ -10,6 +10,7 @@ function setup() {
 
   spider = createImg("tela01/homiranha.gif");
   spider.size(100, 100);
+  spider.style('pointer-events', 'none')
 }
 
 function draw() {
@@ -18,20 +19,17 @@ function draw() {
   if (mouseY < height * 0.6) {
     spider.remove();
     spider = createImg("tela01/teia.gif");
+    spider.style('pointer-events', 'none')
   }
 
   if (mouseY >= height * 0.6) {
     spider.remove();
     spider = createImg("tela01/homiranha.gif");
+    spider.style('pointer-events', 'none')
   }
 
   let tamanho = map(mouseY, 0, height, height * 0.08, height * 0.25);
 
   spider.size(tamanho, tamanho);
   spider.position(mouseX - tamanho / 2, mouseY - tamanho / 2);
-
-  // PROPOSITALMENTE QUEBRADO PARA PODER AVANÇAR A PAGINA, NÃO TO COM PACIENCIA PRA RESOLVER AGORA!
-  if (mouseY = windowHeight - 100){
-    spider.remove();
-  }
 }
