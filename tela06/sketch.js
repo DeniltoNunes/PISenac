@@ -44,7 +44,6 @@ function draw() {
   }
 
   if (estado == "arte") {
-    // Exemplo: se o índice for de 0 a 6 (faces 1 a 7) mostra arte1, e assim por diante
     if (numero <= 5) {
       background(arte1);
     } else if (numero <= 14) {
@@ -52,7 +51,7 @@ function draw() {
     } else {
       background(arte3);
     }
-    return; // O "return" aqui impede que o código abaixo desenhe o dado 3D!
+    return;
   }
 
   if (estado == "dado") {
